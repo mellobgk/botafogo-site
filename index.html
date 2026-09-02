@@ -1,112 +1,422 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Botafogo de Futebol e Regatas</title>
-  <meta name="description" content="Botafogo de Futebol e Regatas: história, títulos e próximos jogos.">
+
+  <meta
+    name="description"
+    content="Botafogo de Futebol e Regatas: história, títulos, próximos jogos e informações do clube."
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <header class="topo">
     <div class="wrap topo__inner">
-      <p class="topo__nome">Botafogo <span class="topo__sub">de Futebol e Regatas</span></p>
+
+      <p class="topo__nome">
+        Botafogo
+        <span class="topo__sub">de Futebol e Regatas</span>
+      </p>
+
       <nav aria-label="Navegação principal">
         <ul>
           <li><a href="#historia">História</a></li>
           <li><a href="#titulos">Títulos</a></li>
           <li><a href="#jogos">Jogos</a></li>
+          <li><a href="#multimidia">Multimídia</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
 
   <main>
 
+    <!-- APRESENTAÇÃO -->
     <section class="hero" aria-label="Apresentação">
+
       <div class="wrap">
+
         <p class="hero__estrela" aria-hidden="true">★</p>
-        <h1>Estrela Solitária. Fundado em 1904, no coração do Rio de Janeiro.</h1>
+
+        <h1>
+          Estrela Solitária. Fundado em 1904, no coração do Rio de Janeiro.
+        </h1>
+
         <p class="hero__texto">
           Um dos clubes mais tradicionais do futebol brasileiro, com uma torcida
           que canta em preto e branco há mais de cem anos.
         </p>
+
+        <img
+          src="assets/images/botafogo.jpg"
+          alt="Escudo do Botafogo de Futebol e Regatas"
+          width="300"
+        >
+
       </div>
+
     </section>
 
+
+    <!-- HISTÓRIA -->
     <section id="historia" aria-labelledby="historia-titulo">
+
       <div class="wrap">
+
         <h2 id="historia-titulo">História</h2>
+
         <p>
-          O Botafogo de Futebol e Regatas nasceu em 1904, no bairro de Botafogo, no
-          Rio de Janeiro, a partir da fusão de dois clubes de remo e futebol da região.
-          Ao longo do século XX, formou algumas das gerações mais lembradas do futebol
-          brasileiro, revelando nomes como Garrincha e Nilton Santos.
+          O Botafogo de Futebol e Regatas nasceu em 1904, no bairro de Botafogo,
+          no Rio de Janeiro. Ao longo de sua história, formou algumas das
+          gerações mais lembradas do futebol brasileiro.
         </p>
+
         <p>
-          Depois de décadas de altos e baixos, o clube viveu em 2024 uma das
-          temporadas mais marcantes de sua história, conquistando o título brasileiro
-          e a Copa Libertadores da América no mesmo ano.
+          O clube revelou grandes nomes do futebol, como Garrincha e Nilton Santos,
+          que marcaram a história do esporte brasileiro.
         </p>
+
+        <p>
+          Em 2024, o Botafogo viveu uma das temporadas mais marcantes de sua
+          história, conquistando o Campeonato Brasileiro e a Copa Libertadores
+          da América.
+        </p>
+
+        <p>
+          Saiba mais sobre o clube no
+          <a
+            href="https://www.botafogo.com.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            site oficial do Botafogo
+          </a>.
+        </p>
+
       </div>
+
     </section>
 
+
+    <!-- TÍTULOS -->
     <section id="titulos" aria-labelledby="titulos-titulo">
+
       <div class="wrap">
+
         <h2 id="titulos-titulo">Principais títulos</h2>
 
-        <ul class="titulos">
-          <li class="titulo">
-            <p class="titulo__numero">2</p>
-            <p class="titulo__nome">Campeonato Brasileiro</p>
-            <p class="titulo__anos">1995 · 2024</p>
-          </li>
-          <li class="titulo">
-            <p class="titulo__numero">1</p>
-            <p class="titulo__nome">Copa Libertadores da América</p>
-            <p class="titulo__anos">2024</p>
-          </li>
-          <li class="titulo">
-            <p class="titulo__numero">21</p>
-            <p class="titulo__nome">Campeonato Carioca</p>
-            <p class="titulo__anos">o mais recente em 2018</p>
-          </li>
-        </ul>
+        <table>
+
+          <caption>
+            Principais títulos conquistados pelo Botafogo
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Competição</th>
+              <th scope="col">Quantidade</th>
+              <th scope="col">Anos</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Campeonato Brasileiro</td>
+              <td>2</td>
+              <td>1995 e 2024</td>
+            </tr>
+
+            <tr>
+              <td>Copa Libertadores da América</td>
+              <td>1</td>
+              <td>2024</td>
+            </tr>
+
+            <tr>
+              <td>Campeonato Carioca</td>
+              <td>21</td>
+              <td>Último em 2018</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
       </div>
+
     </section>
 
+
+    <!-- PRÓXIMO JOGO -->
     <section id="jogos" aria-labelledby="jogos-titulo">
+
       <div class="wrap">
+
         <h2 id="jogos-titulo">Próximo jogo</h2>
+
         <p class="jogos__aviso">
-          Proximo Jogo do Botafogo de Futebol e Regatas. Confira a data, horário e local da partida.
+          Próximo jogo do Botafogo de Futebol e Regatas.
+          Confira a data, horário e local da partida.
         </p>
 
         <article class="jogo">
-          <p class="jogo__campeonato">Campeonato Brasileiro · Rodada 26</p>
+
+          <p class="jogo__campeonato">
+            Campeonato Brasileiro · Rodada 26
+          </p>
+
           <div class="jogo__placar">
             <span>Botafogo</span>
             <span class="jogo__x">×</span>
             <span>Palmeiras</span>
           </div>
-          <p class="jogo__info"><time datetime="2026-09-15T20:00">06 de setembro, 18:30h</time> · Estádio Nilton Santos</p>
+
+          <p class="jogo__info">
+            <time datetime="2026-09-06T18:30">
+              06 de setembro, 18:30h
+            </time>
+            · Estádio Nilton Santos
+          </p>
+
         </article>
+
       </div>
+
+    </section>
+
+
+    <!-- MULTIMÍDIA -->
+    <section id="multimidia" aria-labelledby="multimidia-titulo">
+
+      <div class="wrap">
+
+        <h2 id="multimidia-titulo">Multimídia</h2>
+
+        <h3>Vídeo do Botafogo</h3>
+
+        <video
+          controls
+          poster="assets/images/botafogo-poster.jpg"
+          preload="metadata"
+          width="640"
+        >
+
+          <source
+            src="assets/videos/botafogo.mp4"
+            type="video/mp4"
+          >
+
+          <source
+            src="assets/videos/botafogo.webm"
+            type="video/webm"
+          >
+
+          <track
+            src="assets/videos/legenda.vtt"
+            kind="subtitles"
+            srclang="pt-BR"
+            label="Português"
+            default
+          >
+
+          Seu navegador não suporta o elemento de vídeo.
+
+        </video>
+
+
+        <h3>Estádio Nilton Santos</h3>
+
+        <iframe
+          src="https://www.google.com/maps?q=Estádio+Nilton+Santos,+Rio+de+Janeiro&output=embed"
+          title="Localização do Estádio Nilton Santos"
+          width="600"
+          height="450"
+          loading="lazy"
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+
+      </div>
+
+    </section>
+
+
+    <!-- FORMULÁRIO -->
+    <section id="contato" aria-labelledby="contato-titulo">
+
+      <div class="wrap">
+
+        <h2 id="contato-titulo">Fale com a torcida</h2>
+
+        <p>
+          Envie sua pergunta, opinião ou mensagem sobre o Botafogo.
+        </p>
+
+        <form action="#" method="post">
+
+          <fieldset>
+
+            <legend>Dados do torcedor</legend>
+
+            <div>
+              <label for="nome">Nome:</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                required
+              >
+            </div>
+
+            <div>
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
+                required
+              >
+            </div>
+
+            <div>
+              <label for="telefone">Telefone:</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(00) 00000-0000"
+              >
+            </div>
+
+          </fieldset>
+
+
+          <fieldset>
+
+            <legend>Mensagem</legend>
+
+            <div>
+              <label for="assunto">Assunto:</label>
+
+              <select id="assunto" name="assunto">
+
+                <option value="">
+                  Selecione um assunto
+                </option>
+
+                <option value="historia">
+                  História do clube
+                </option>
+
+                <option value="titulos">
+                  Títulos
+                </option>
+
+                <option value="jogos">
+                  Próximos jogos
+                </option>
+
+                <option value="outro">
+                  Outro
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div>
+              <label for="mensagem">Mensagem:</label>
+
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="6"
+                placeholder="Digite sua mensagem..."
+                required
+              ></textarea>
+
+            </div>
+
+
+            <div>
+              <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+              >
+
+              <label for="newsletter">
+                Quero receber novidades sobre o clube.
+              </label>
+            </div>
+
+          </fieldset>
+
+
+          <button type="submit">
+            Enviar mensagem
+          </button>
+
+          <button type="reset">
+            Limpar formulário
+          </button>
+
+        </form>
+
+      </div>
+
     </section>
 
   </main>
 
+
   <footer>
+
     <div class="wrap">
-      <p>Botafogo de Futebol e Regatas — fundado em 1904, Rio de Janeiro.</p>
+
+      <p>
+        Botafogo de Futebol e Regatas — fundado em 1904,
+        Rio de Janeiro.
+      </p>
+
+      <p>
+        <a
+          href="https://www.instagram.com/botafogo/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram oficial
+        </a>
+      </p>
+
     </div>
+
   </footer>
 
 </body>
+
 </html>
+```
+
