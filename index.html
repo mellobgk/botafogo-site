@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -29,10 +28,35 @@
   <header class="topo">
     <div class="wrap topo__inner">
 
-      <p class="topo__nome">
-        Botafogo
-        <span class="topo__sub">de Futebol e Regatas</span>
-      </p>
+      <div class="topo__marca">
+
+        <svg
+          class="emblema emblema--topo"
+          viewBox="0 0 120 140"
+          width="36"
+          height="42"
+          role="img"
+          aria-labelledby="topoEmblemaTitulo"
+        >
+          <title id="topoEmblemaTitulo">Emblema do Botafogo de Futebol e Regatas</title>
+
+          <path
+            class="emblema__escudo"
+            d="M60 5 L110 30 L110 88 Q110 124 60 135 Q10 124 10 88 L10 30 Z"
+          />
+
+          <polygon
+            class="emblema__estrela"
+            points="60,34 68,57 92,57 72,71 80,94 60,80 40,94 48,71 28,57 52,57"
+          />
+        </svg>
+
+        <p class="topo__nome">
+          Botafogo
+          <span class="topo__sub">de Futebol e Regatas</span>
+        </p>
+
+      </div>
 
       <nav aria-label="Navegação principal">
         <ul>
@@ -65,11 +89,37 @@
           que canta em preto e branco há mais de cem anos.
         </p>
 
-        <img
-          src="assets/images/botafogo.jpg"
-          alt="Escudo do Botafogo de Futebol e Regatas"
-          width="300"
+        <svg
+          class="emblema emblema--hero"
+          viewBox="0 0 120 140"
+          width="160"
+          height="187"
+          role="img"
+          aria-labelledby="heroEmblemaTitulo heroEmblemaDesc"
         >
+          <title id="heroEmblemaTitulo">Emblema do Botafogo de Futebol e Regatas</title>
+          <desc id="heroEmblemaDesc">
+            Escudo preto com a estrela solitária branca ao centro e as
+            iniciais BFR na base.
+          </desc>
+
+          <path
+            class="emblema__escudo"
+            d="M60 5 L110 30 L110 88 Q110 124 60 135 Q10 124 10 88 L10 30 Z"
+          />
+
+          <polygon
+            class="emblema__estrela"
+            points="60,34 68,57 92,57 72,71 80,94 60,80 40,94 48,71 28,57 52,57"
+          />
+
+          <text
+            class="emblema__sigla"
+            x="60"
+            y="118"
+            text-anchor="middle"
+          >BFR</text>
+        </svg>
 
       </div>
 
@@ -102,7 +152,7 @@
 
         <p>
           Saiba mais sobre o clube no
-          <a
+          
             href="https://www.botafogo.com.br/"
             target="_blank"
             rel="noopener noreferrer"
@@ -402,7 +452,7 @@
       </p>
 
       <p>
-        <a
+        
           href="https://www.instagram.com/botafogo/"
           target="_blank"
           rel="noopener noreferrer"
@@ -418,5 +468,3 @@
 </body>
 
 </html>
-```
-
