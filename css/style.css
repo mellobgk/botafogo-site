@@ -235,3 +235,40 @@ footer p {
   font-size: 0.85rem;
   margin: 0;
 }
+/* Melhorias das aulas 7–9: layout, navegação e formulários */
+html {scroll-behavior:smooth;}
+:focus-visible {outline:3px solid #f4f3ef;outline-offset:4px;}
+.topo {position:sticky;top:0;z-index:10;background:var(--preto);}
+.topo__inner {align-items:center;}
+.topo nav ul {flex-wrap:wrap;gap:.7rem 1.1rem;}
+.topo nav a {display:inline-block;padding:.35rem 0;border-bottom:2px solid transparent;}
+.topo nav a:hover,.topo nav a:focus-visible {color:var(--branco);border-bottom-color:var(--branco);}
+.menu-toggle {display:none;background:transparent;color:var(--branco);border:1px solid var(--linha);border-radius:4px;padding:.6rem .85rem;cursor:pointer;}
+.painel-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1.5rem;}
+.painel {background:var(--preto-suave);border:1px solid var(--linha);border-radius:6px;padding:1.3rem;min-width:0;}
+.painel h3 {margin-top:0;color:var(--branco);}
+.painel--grafico {margin-top:1rem;}
+.opcao {display:block;padding:.35rem 0;cursor:pointer;}
+.botao {font:inherit;border-radius:4px;padding:.65rem 1rem;cursor:pointer;margin:.5rem .5rem .5rem 0;}
+.botao--principal {background:var(--branco);color:var(--preto);border:1px solid var(--branco);font-weight:600;}
+.botao--secundario {background:transparent;color:var(--branco);border:1px solid var(--cinza);}
+.botao:hover {filter:brightness(.85);}
+fieldset {border:1px solid var(--linha);border-radius:4px;margin:1rem 0;padding:1rem;}
+legend {color:var(--branco);padding:0 .4rem;}
+#form-contato fieldset > div {margin-bottom:1rem;}
+#form-contato label {display:inline-block;margin-bottom:.3rem;}
+#form-contato input:not([type=checkbox]),#form-contato select,#form-contato textarea {display:block;width:100%;max-width:100%;background:var(--preto-suave);color:var(--branco);border:1px solid var(--cinza);padding:.7rem;border-radius:4px;font:inherit;}
+#form-contato input[type=checkbox] {accent-color:var(--branco);}
+video,iframe {display:block;max-width:100%;margin:1rem 0;}
+#canvas-estrela {display:block;max-width:100%;height:auto;border-radius:5px;}
+@media(max-width:650px) {
+ .topo__inner {align-items:center;}
+ .menu-toggle {display:block;margin-left:auto;}
+ .topo nav {display:none;width:100%;}
+ .topo nav.aberto {display:block;}
+ .topo nav ul {display:flex;flex-direction:column;gap:.25rem;}
+ .topo nav a {display:block;padding:.65rem;}
+ .painel-grid {grid-template-columns:1fr;}
+ .hero {padding-block:2.5rem;}
+}
+@media(prefers-reduced-motion:reduce) {html {scroll-behavior:auto;}}

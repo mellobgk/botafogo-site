@@ -21,6 +21,7 @@
   >
 
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -58,12 +59,14 @@
 
       </div>
 
-      <nav aria-label="Navegação principal">
+      <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false">☰ <span>Menu</span></button>
+      <nav id="menu-principal" aria-label="Navegação principal">
         <ul>
           <li><a href="#historia">História</a></li>
           <li><a href="#titulos">Títulos</a></li>
           <li><a href="#jogos">Jogos</a></li>
           <li><a href="#multimidia">Multimídia</a></li>
+          <li><a href="#interativo">Interativo</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
@@ -310,6 +313,41 @@
     </section>
 
 
+    <!-- RECURSOS INTERATIVOS -->
+    <section id="interativo" aria-labelledby="interativo-titulo">
+      <div class="wrap">
+        <h2 id="interativo-titulo">Espaço do torcedor</h2>
+        <p>Explore a história alvinegra com recursos interativos feitos em JavaScript.</p>
+        <div class="painel-grid">
+          <article class="painel">
+            <h3>Quiz do Botafogo</h3>
+            <p id="pergunta-quiz">Em que ano o Botafogo foi fundado?</p>
+            <form id="quiz-form">
+              <fieldset>
+                <legend>Escolha uma alternativa</legend>
+                <label class="opcao"><input type="radio" name="ano" value="1894" required> 1894</label>
+                <label class="opcao"><input type="radio" name="ano" value="1904"> 1904</label>
+                <label class="opcao"><input type="radio" name="ano" value="1914"> 1914</label>
+              </fieldset>
+              <button class="botao botao--principal" type="submit">Corrigir resposta</button>
+            </form>
+            <p id="resultado-quiz" role="status" aria-live="polite"></p>
+          </article>
+          <article class="painel">
+            <h3>Meu clube favorito</h3>
+            <p>Marque o Botafogo como favorito. Sua escolha fica salva neste navegador.</p>
+            <button id="botao-favorito" class="botao botao--principal" type="button" aria-pressed="false">☆ Favoritar Botafogo</button>
+            <p id="status-favorito" role="status" aria-live="polite"></p>
+          </article>
+        </div>
+        <article class="painel painel--grafico">
+          <h3>Estrela Solitária em Canvas</h3>
+          <p>O escudo acima usa SVG vetorial. A estrela abaixo é desenhada pixel a pixel com Canvas e JavaScript.</p>
+          <canvas id="canvas-estrela" width="320" height="170" role="img" aria-label="Ilustração de uma estrela branca sobre fundo escuro">Estrela branca sobre fundo escuro.</canvas>
+        </article>
+      </div>
+    </section>
+
     <!-- FORMULÁRIO -->
     <section id="contato" aria-labelledby="contato-titulo">
 
@@ -321,7 +359,7 @@
           Envie sua pergunta, opinião ou mensagem sobre o Botafogo.
         </p>
 
-        <form action="#" method="post">
+        <form id="form-contato" action="#" method="post">
 
           <fieldset>
 
@@ -425,15 +463,16 @@
           </fieldset>
 
 
-          <button type="submit">
+          <button class="botao botao--principal" type="submit">
             Enviar mensagem
           </button>
 
-          <button type="reset">
+          <button class="botao botao--secundario" type="reset">
             Limpar formulário
           </button>
 
         </form>
+        <p id="form-feedback" role="status" aria-live="polite"></p>
 
       </div>
 
@@ -452,8 +491,7 @@
       </p>
 
       <p>
-        
-          href="https://www.instagram.com/botafogo/"
+        <a href="https://www.instagram.com/botafogo/"
           target="_blank"
           rel="noopener noreferrer"
         >
